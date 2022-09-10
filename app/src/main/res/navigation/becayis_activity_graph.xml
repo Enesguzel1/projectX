@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/becayis_activity_graph"
+    app:startDestination="@id/becayisHomePageFragment">
+
+    <fragment
+        android:id="@+id/becayisHomePageFragment"
+        android:name="com.enes.project.Fragments.BecayisHomePageFragment"
+        android:label="fragment_becayis_home_page"
+        tools:layout="@layout/fragment_becayis_home_page" >
+        <action
+            android:id="@+id/action_becayisHomePageFragment_to_ilanEkleFragment"
+            app:destination="@id/ilanEkleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ilanEkleFragment"
+        android:name="com.enes.project.Fragments.IlanEkleFragment"
+        android:label="fragment_ilan_ekle"
+        tools:layout="@layout/fragment_ilan_ekle" >
+        <action
+            android:id="@+id/action_ilanEkleFragment_to_becayisHomePageFragment"
+            app:destination="@id/becayisHomePageFragment" />
+    </fragment>
+</navigation>

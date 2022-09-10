@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/al_sat_activity_graph"
+    app:startDestination="@id/alSatHomePageFragment">
+
+    <fragment
+        android:id="@+id/alSatHomePageFragment"
+        android:name="com.enes.project.Fragments.AlSatHomePageFragment"
+        android:label="fragment_al_sat_home_page"
+        tools:layout="@layout/fragment_al_sat_home_page" >
+        <action
+            android:id="@+id/action_alSatHomePageFragment_to_urunEkleFragment"
+            app:destination="@id/urunEkleFragment" />
+        <action
+            android:id="@+id/action_alSatHomePageFragment_to_urunDetayFragment"
+            app:destination="@id/urunDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/urunDetayFragment"
+        android:name="com.enes.project.Fragments.UrunDetayFragment"
+        android:label="fragment_urun_detay"
+        tools:layout="@layout/fragment_urun_detay" >
+        <action
+            android:id="@+id/action_urunDetayFragment_to_alSatHomePageFragment"
+            app:destination="@id/alSatHomePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/urunEkleFragment"
+        android:name="com.enes.project.Fragments.UrunEkleFragment"
+        android:label="fragment_urun_ekle"
+        tools:layout="@layout/fragment_urun_ekle" >
+        <action
+            android:id="@+id/action_urunEkleFragment_to_alSatHomePageFragment"
+            app:destination="@id/alSatHomePageFragment" />
+    </fragment>
+</navigation>

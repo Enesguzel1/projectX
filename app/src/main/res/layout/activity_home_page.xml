@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="5dp"
+    tools:context=".HomePageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image1"/>
+
+        <Button
+            android:id="@+id/becayisButton"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="Becayiş"
+            android:layout_margin="5dp"
+            android:background="@drawable/block"
+            android:textSize="30sp"
+            />
+        <Button
+            android:id="@+id/alSatButton"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="Al &amp; sat"
+            android:layout_margin="5dp"
+            android:background="@drawable/block"
+            android:textSize="30sp"
+            />
+        <Button
+            android:id="@+id/soruCevapButton"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:text="soru &amp; cevap"
+            android:background="@drawable/block"
+            android:textSize="30sp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

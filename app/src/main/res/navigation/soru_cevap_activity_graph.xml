@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sour_cevap_activity_graph"
+    app:startDestination="@id/soruCevapHomePageFragment">
+    <fragment
+        android:id="@+id/soruCevapHomePageFragment"
+        android:name="com.enes.project.Fragments.SoruCevapHomePageFragment"
+        android:label="fragment_soru_cevap_home_page"
+        tools:layout="@layout/fragment_soru_cevap_home_page" >
+        <action
+            android:id="@+id/action_soruCevapHomePageFragment_to_gonderiPaylasFragment"
+            app:destination="@id/gonderiPaylasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gonderiPaylasFragment"
+        android:name="com.enes.project.Fragments.GonderiPaylasFragment"
+        android:label="fragment_gonderi_paylas"
+        tools:layout="@layout/fragment_gonderi_paylas" >
+        <action
+            android:id="@+id/action_gonderiPaylasFragment_to_soruCevapHomePageFragment"
+            app:destination="@id/soruCevapHomePageFragment" />
+    </fragment>
+</navigation>
