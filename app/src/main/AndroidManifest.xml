@@ -17,7 +17,7 @@
             android:name=".SoruCevapActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".AlSatActivity"
             android:exported="false" />
         <activity
             android:name=".BecayisActivity"
@@ -26,7 +26,7 @@
             android:name=".HomePageActivity"
             android:exported="false" />
         <activity
-            android:name=".AlSatActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
