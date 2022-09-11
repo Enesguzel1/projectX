@@ -24,7 +24,21 @@ public class AlSatActivity extends AppCompatActivity {
         alSatNavBottomMenu.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                Toast.makeText(AlSatActivity.this, ""+item.getTitle(), Toast.LENGTH_SHORT).show();
+                switch (item.getItemId()){
+                    case R.id.menu_al_sat_home:
+                        Toast.makeText(AlSatActivity.this, "HOME", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.menu_al_sat_advertise:
+                        Toast.makeText(AlSatActivity.this, "Adversite", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.menu_al_sat_my_advertise:
+                        Toast.makeText(AlSatActivity.this, "My Adversite", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.menu_al_sat_my_profile:
+                        Toast.makeText(AlSatActivity.this, "Profile", Toast.LENGTH_SHORT).show();
+                        break;
+
+                }
                 return true;
             }
         });
