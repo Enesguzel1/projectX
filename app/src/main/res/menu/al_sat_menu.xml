@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_al_sat_home"
+        android:title="Ana sayfa"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/menu_al_sat_advertise"
+        android:title="İlan ver"
+        android:icon="@drawable/ic_add_advertise"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/menu_al_sat_my_advertise"
+        android:title="İlanlarım"
+        android:icon="@drawable/ic_my_advertise"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/menu_al_sat_my_profile"
+        android:title="Profilim"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

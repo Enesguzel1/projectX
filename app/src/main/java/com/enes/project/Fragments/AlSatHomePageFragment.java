@@ -15,13 +15,9 @@ import com.enes.project.R;
 
 public class AlSatHomePageFragment extends Fragment {
 
-
     public AlSatHomePageFragment() {
         // Required empty public constructor
     }
-
-
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -32,8 +28,10 @@ public class AlSatHomePageFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_al_sat_home_page, container, false);
 
-        return inflater.inflate(R.layout.fragment_al_sat_home_page, container, false);
+
+        return view;
     }
 
     @Override
