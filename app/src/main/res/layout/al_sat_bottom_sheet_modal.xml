@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetRelativeLayout"
+    android:background="@drawable/al_sat_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İlan ver"
+            android:textSize="23sp"
+            android:layout_marginTop="18dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="İlan başlığı"
+            android:textSize="18dp"
+            android:ems="12"
+            android:padding="15dp"
+            android:layout_marginTop="35dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:hint="İlan açıklaması"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:ems="12"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextMultiLineA"
+            android:hint="Adres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:ems="12"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:text="Fotoğraf Yükle"
+            android:layout_marginTop="43dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:minHeight="80dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:layout_marginHorizontal="28dp"
+               app:cardElevation="5dp"
+               app:cardBackgroundColor="@color/gradiant2"
+               app:cardCornerRadius="5dp">
+               <ImageView
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/ic_add"
+                   android:alpha="0.5"/>
+           </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="28dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/gradiant2"
+                app:cardCornerRadius="5dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_add"
+                    android:alpha="0.5"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="28dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/gradiant2"
+                app:cardCornerRadius="5dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_add"
+                    android:alpha="0.5"/>
+            </androidx.cardview.widget.CardView>
+
+         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="80dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23sp"
+                android:text="Ürün fiyatı:"
+                android:layout_marginHorizontal="12dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:ems="3"
+                android:padding="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23sp"
+                android:text="TL"
+                android:layout_marginHorizontal="5dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:textColor="@color/white"
+            android:letterSpacing="0.11"
+            android:textSize="18sp"
+            android:ems="10"
+            android:text="İlanı yayınla"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
