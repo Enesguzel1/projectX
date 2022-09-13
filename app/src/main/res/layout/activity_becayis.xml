@@ -31,10 +31,10 @@
         android:id="@+id/circleMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         app:button_colors="@array/colors"
         app:button_icons="@array/icons"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         app:distance="60dp"
         app:icon_color="@color/white" />
 

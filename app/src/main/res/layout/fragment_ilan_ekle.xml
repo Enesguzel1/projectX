@@ -4,20 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.IlanEkleFragment"
-    android:background="@drawable/background">
+    android:background="@drawable/home_page_activity_background">
 
     <TextView
         android:id="@+id/ilanEkleText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="Becayiş İlanı Ekle"
         android:textAlignment="center"
+        android:background="@drawable/border"
         android:textColor="#000000"
         android:textSize="25dp"
-        android:textStyle="bold|italic" />
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/neredenText"
@@ -38,7 +39,8 @@
         android:layout_below="@id/neredenText"
         android:layout_alignLeft="@+id/neredenText"
         android:layout_marginTop="10dp"
-        android:background="@drawable/button_shape" />
+        android:background="@drawable/border"
+        />
 
 
     <TextView
@@ -60,7 +62,7 @@
         android:layout_below="@id/nereyeText"
         android:layout_alignLeft="@+id/nereyeText"
         android:layout_marginTop="10dp"
-        android:background="@drawable/button_shape" />
+        android:background="@drawable/border" />
 
 
     <TextView
@@ -77,16 +79,16 @@
 
     <EditText
         android:id="@+id/aciklamaEditText"
-        android:layout_width="wrap_content"
+        android:layout_width="220dp"
         android:layout_height="90dp"
-        android:ems="10"
-        android:layout_marginTop="10dp"
-        android:inputType="textPersonName"
-        android:hint="Açıklama"
-        android:textAlignment="center"
-        android:background="@drawable/button_shape"
         android:layout_below="@id/aciklamaText"
-        android:layout_alignLeft="@+id/aciklamaText"/>
+        android:layout_alignLeft="@+id/aciklamaText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Açıklama"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/paylasButton"
@@ -95,7 +97,8 @@
         android:layout_below="@id/aciklamaEditText"
         android:layout_alignLeft="@id/aciklamaEditText"
         android:layout_marginTop="80dp"
-        android:background="@drawable/button_shape"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/white"
         android:text="İlanı Paylaş"
         android:textAlignment="center" />
 
