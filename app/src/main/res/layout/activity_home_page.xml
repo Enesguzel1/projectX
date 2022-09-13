@@ -6,11 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
+    android:background="@drawable/home_page_activity_background"
     tools:context=".HomePageActivity">
-    <!--
-        Ust taraftaki relative background
-        android:background="@drawable/home_page_activity_background"
-     -->
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -53,16 +51,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+
+                    >
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:src="@drawable/ic_becayis"
                         />
-                        <!--
-                            Ust taraftaki ImageView background
-                            android:src="@drawable/ic_becayis"
-                         -->
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -99,11 +97,10 @@
 
                     <ImageView
                         android:layout_width="50dp"
-                        android:layout_height="50dp"/>
-                     <!--
-                        Ust taraftaki ImageView background
-                         android:src="@drawable/ic_al_sat"
-                     -->
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_al_sat"
+                        />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -141,11 +138,10 @@
 
                     <ImageView
                         android:layout_width="50dp"
-                        android:layout_height="50dp" />
-                    <!--
-                       Ust taraftaki ImageView background
-                       android:src="@drawable/ic_question_answer"
-                     -->
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_question_answer"
+                        />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -182,11 +178,10 @@
 
                     <ImageView
                         android:layout_width="50dp"
-                        android:layout_height="50dp"/>
-                    <!--
-                      Ust taraftaki ImageView background
-                      android:src="@drawable/ic_suggestion"
-                   -->
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_suggestion"
+                        />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -225,11 +220,10 @@
 
                     <ImageView
                         android:layout_width="50dp"
-                        android:layout_height="50dp" />
-                    <!--
-                      Ust taraftaki ImageView background
-                      android:src="@drawable/ic_help"
-                   -->
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_help"
+                        />
+
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -267,11 +261,9 @@
 
                     <ImageView
                         android:layout_width="50dp"
-                        android:layout_height="50dp" />
-                    <!--
-                      Ust taraftaki ImageView background
-                      android:src="@drawable/ic_settings"
-                   -->
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_settings"/>
+
 
                     <TextView
                         android:layout_width="wrap_content"
