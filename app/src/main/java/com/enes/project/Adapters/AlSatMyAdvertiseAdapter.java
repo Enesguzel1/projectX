@@ -8,11 +8,11 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import java.util.ArrayList;
 
-public class alSatAdapter extends FragmentStateAdapter {
+public class AlSatMyAdvertiseAdapter extends FragmentStateAdapter {
     ArrayList<Fragment> fragments;
     ArrayList<String> pageTitles;
 
-    public alSatAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
+    public AlSatMyAdvertiseAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
         super(fragmentManager, lifecycle);
         fragments = new ArrayList<>();
         pageTitles = new ArrayList<>();
