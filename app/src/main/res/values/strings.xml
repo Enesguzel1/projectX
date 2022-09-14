@@ -3,4 +3,47 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <string-array name="username">
+
+        <item>EnesGuzel1</item>
+        <item>UmutSaydam1</item>
+        <item>SamedGuzel1</item>
+        <item>SemihGuzel1</item>
+        <item>DoganSaydam1</item>
+
+
+    </string-array>
+    <string-array name="gidilecekyurt">
+
+        <item>Ahmet Kabaklı</item>
+        <item>TDV Yurt</item>
+        <item>İzzet Paşa</item>
+        <item>Ömer Bilginoğlu</item>
+        <item>Harput Yurdu</item>
+
+
+    </string-array>
+    <string-array name="bulunulanyurt">
+
+        <item>TDV Yurt</item>
+        <item>Ahmet Kabaklı</item>
+        <item>Ömer Bilginoğlu</item>
+        <item>İzzet Paşa</item>
+        <item>Harput Yurdu</item>
+
+
+    </string-array>
+
+    <string-array name="aciklama">
+
+        <item>D blok 213 Numaralı odadayım</item>
+        <item>A blok 113 Numaralı odadayım</item>
+        <item>B blok 453 Numaralı odadayım</item>
+        <item>C blok 583 Numaralı odadayım</item>
+        <item>E blok 103 Numaralı odadayım</item>
+
+
+    </string-array>
+
 </resources>

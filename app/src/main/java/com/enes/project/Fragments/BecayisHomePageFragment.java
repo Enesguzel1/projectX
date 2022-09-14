@@ -5,20 +5,22 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavDirections;
-import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.enes.project.Adapters.BecayisAdapter;
+import com.enes.project.Models.BecayisRowModel;
 import com.enes.project.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
+
+import java.util.ArrayList;
 
 
 public class BecayisHomePageFragment extends Fragment {
+    ArrayList<BecayisRowModel> becayisRowModels= new ArrayList<>();
 
 
     public BecayisHomePageFragment() {
@@ -30,6 +32,7 @@ public class BecayisHomePageFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
     }
 
@@ -44,5 +47,28 @@ public class BecayisHomePageFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        RecyclerView recyclerView=view.findViewById(R.id.mRecycleView);
+
+        setUpBecayisModels();
+
+        BecayisAdapter adapter= new BecayisAdapter(getContext(),becayisRowModels);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+
+    }
+
+    public void setUpBecayisModels(){
+        String[] username=getResources().getStringArray(R.array.username);
+        String[] bulunulanYurt=getResources().getStringArray(R.array.bulunulanyurt);
+        String[] gidilecekYurt=getResources().getStringArray(R.array.gidilecekyurt);
+        String[] aciklama=getResources().getStringArray(R.array.aciklama);
+
+        for (int i=0;i<5;i++){
+            becayisRowModels.add(new BecayisRowModel(username[i],
+                    bulunulanYurt[i],
+                    gidilecekYurt[i],
+                    aciklama[i]));
+        }
     }
 }
