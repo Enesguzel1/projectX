@@ -16,7 +16,7 @@ import android.view.Window;
 import android.widget.Toast;
 
 import com.enes.project.Fragments.AlSatHomePageFragment;
-import com.enes.project.Fragments.myAdvertiseFragment;
+import com.enes.project.Fragments.alSatMyAdvertiseFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -42,7 +42,7 @@ public class AlSatActivity extends AppCompatActivity {
                     Toast.makeText(AlSatActivity.this, "Adversite", Toast.LENGTH_SHORT).show();
                 } else if (itemId == R.id.menu_al_sat_my_advertise) {
                     Toast.makeText(AlSatActivity.this, "My Adversite", Toast.LENGTH_SHORT).show();
-                    setFragment(new myAdvertiseFragment());
+                    setFragment(new alSatMyAdvertiseFragment());
                 } else if (itemId == R.id.menu_al_sat_my_profile) {
                     Toast.makeText(AlSatActivity.this, "Profile", Toast.LENGTH_SHORT).show();
                 }
@@ -61,7 +61,7 @@ public class AlSatActivity extends AppCompatActivity {
     private void bottomSheetDialog(){
         final Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.al_sat_bottom_sheet_modal);
+        dialog.setContentView(R.layout.al_sat_add_advertise_bottom_sheet_modal);
 
         dialog.show();
         dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
