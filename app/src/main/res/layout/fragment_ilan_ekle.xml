@@ -15,14 +15,11 @@
         android:layout_marginTop="30dp"
         android:text="Becayiş İlanı Ekle"
         android:textAlignment="center"
-
+        android:background="@drawable/border"
         android:textColor="#000000"
         android:textSize="25dp"
         android:textStyle="italic" />
-    <!--
-        ustteki bosluktan alindi
-        android:background="@drawable/border"
-    -->
+
     <TextView
         android:id="@+id/neredenText"
         android:layout_width="wrap_content"
@@ -42,12 +39,10 @@
         android:layout_below="@id/neredenText"
         android:layout_alignLeft="@+id/neredenText"
         android:layout_marginTop="10dp"
+        android:background="@drawable/border"
 
         />
-    <!--
-        ustteki bosluktan alindi
-        android:background="@drawable/border"
-    -->
+
 
     <TextView
         android:id="@+id/nereyeText"
@@ -68,11 +63,9 @@
         android:layout_below="@id/nereyeText"
         android:layout_alignLeft="@+id/nereyeText"
         android:layout_marginTop="10dp"
-         />
-    <!--
-        ustteki bosluktan alindi
         android:background="@drawable/border"
-    -->
+         />
+
 
     <TextView
         android:id="@+id/aciklamaText"
@@ -94,13 +87,11 @@
         android:layout_alignLeft="@+id/aciklamaText"
         android:layout_marginTop="10dp"
         android:ems="10"
+        android:background="@drawable/border"
         android:hint="Açıklama"
         android:inputType="textPersonName"
         android:textAlignment="center" />
-    <!--
-        ustteki bosluktan alindi
-        android:background="@drawable/border"
-    -->
+
     <Button
         android:id="@+id/paylasButton"
         android:layout_width="250dp"
@@ -110,9 +101,7 @@
         android:layout_marginTop="80dp"
         android:backgroundTint="@color/white"
         android:text="İlanı Paylaş"
-        android:textAlignment="center" />
-    <!--
-        ustteki bosluktan alindi
         android:background="@drawable/border"
-    -->
+        android:textAlignment="center" />
+
 </RelativeLayout>
