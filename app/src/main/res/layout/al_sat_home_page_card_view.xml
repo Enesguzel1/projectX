@@ -9,20 +9,22 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:minWidth="180dp"
+        android:minWidth="160dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp"
         android:gravity="center">
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="180dp"
+            android:id="@+id/alSatAdvertiseImg"
+            android:layout_width="130dp"
+            android:layout_height="160dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_home"
             android:alpha="0.5"/>
 
         <TextView
+            android:id="@+id/alSatAdvertiseTitle"
             android:layout_width="match_parent"
             android:maxWidth="140dp"
             android:layout_height="wrap_content"
