@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/drawable/al_sat_bottom_sheet.xml" value="0.134" />
+        <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/drawable/block.xml" value="0.2385" />
+        <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/drawable/border.xml" value="0.2385" />
         <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/drawable/home_page_activity_background.xml" value="0.253" />
         <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/drawable/ic_add.xml" value="0.253" />
         <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/drawable/ic_al_sat.xml" value="0.253" />
@@ -12,9 +14,11 @@
         <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/layout/activity_becayis.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/layout/activity_home_page.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/layout/al_sat_add_advertise_bottom_sheet_modal.xml" value="0.264" />
         <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/layout/al_sat_bottom_sheet_modal.xml" value="0.264" />
-        <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/layout/al_sat_home_page_card_view.xml" value="0.4" />
+        <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/layout/al_sat_home_page_card_view.xml" value="0.264" />
         <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/layout/fragment_al_sat_home_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/layout/fragment_al_sat_my_advertise.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/layout/fragment_al_sat_my_advertise_for_sale.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/layout/fragment_al_sat_my_advertise_sold.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Umut/AndroidStudioProjects/projectX/app/src/main/res/layout/fragment_becayis_home_page.xml" value="0.25416666666666665" />
