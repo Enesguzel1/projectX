@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.alSatAdvertiseDetailsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/alSatAdvertiseDetailsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/alSatAdvertiseDetailsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eaeaea"
+        android:layout_below="@+id/alSatAdvertiseDetailsToolbar"/>
+
+
+</RelativeLayout>
