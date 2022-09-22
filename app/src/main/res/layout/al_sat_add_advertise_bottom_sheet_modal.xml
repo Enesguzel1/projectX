@@ -22,6 +22,7 @@
             android:layout_marginTop="18dp"/>
 
         <EditText
+            android:id="@+id/edtTxtAdvertiseTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="İlan başlığı"
@@ -32,7 +33,7 @@
             android:background="@drawable/border"/>
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/edtTxtAdvertiseDescription"
             android:hint="İlan açıklaması"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,7 +46,7 @@
             android:background="@drawable/border"/>
 
         <EditText
-            android:id="@+id/editTextTextMultiLineA"
+            android:id="@+id/edtTxtAdvertiseAddress"
             android:hint="Adres"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,6 +76,7 @@
             android:layout_marginTop="20dp">
 
            <androidx.cardview.widget.CardView
+               android:id="@+id/addAdvertiseCardView1"
                android:layout_width="60dp"
                android:layout_height="60dp"
                android:layout_marginHorizontal="28dp"
@@ -82,6 +84,7 @@
                app:cardBackgroundColor="@color/gradiant2"
                app:cardCornerRadius="5dp">
                <ImageView
+                   android:id="@+id/imgAdvertiseImg1"
                    android:layout_width="40dp"
                    android:layout_height="40dp"
                    android:layout_gravity="center"
@@ -90,6 +93,7 @@
            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/addAdvertiseCardView2"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginHorizontal="28dp"
@@ -97,6 +101,7 @@
                 app:cardBackgroundColor="@color/gradiant2"
                 app:cardCornerRadius="5dp">
                 <ImageView
+                    android:id="@+id/imgAdvertiseImg2"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
@@ -105,6 +110,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/addAdvertiseCardView3"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginHorizontal="28dp"
@@ -112,6 +118,7 @@
                 app:cardBackgroundColor="@color/gradiant2"
                 app:cardCornerRadius="5dp">
                 <ImageView
+                    android:id="@+id/imgAdvertiseImg3"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
@@ -128,14 +135,13 @@
             android:orientation="horizontal"
             android:layout_marginTop="50dp">
         <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <TextView
+            android:id="@+id/checkboxGiveFree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="23sp"
+            android:padding="8dp"
+            android:textSize="22sp"
             android:text="Ücretsiz ver"/>
+
         </LinearLayout>
 
         <LinearLayout
@@ -153,6 +159,7 @@
                 android:layout_marginHorizontal="12dp"/>
 
             <EditText
+                android:id="@+id/advertisePrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
@@ -170,6 +177,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/publishAdvertise"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/button_shape"
@@ -178,7 +186,7 @@
             android:textSize="18sp"
             android:ems="10"
             android:text="İlanı yayınla"
-            android:layout_marginTop="25dp"/>
+            android:layout_margin="35dp"/>
 
     </LinearLayout>
 
