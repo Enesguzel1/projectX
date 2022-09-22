@@ -7,7 +7,4 @@
 
     />
 
-    <corners
-        android:topLeftRadius="500dp"
-        />
 </shape>
