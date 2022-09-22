@@ -9,8 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import soup.neumorphism.NeumorphCardView;
+
 public class HomePageActivity extends AppCompatActivity {
-    CardView cardViewBecayis,cardViewAlSat,cardViewSoruCevap,cardViewOneri,cardViewYardım,cardViewAyarlar;
+    NeumorphCardView cardViewBecayis,cardViewAlSat,cardViewSoruCevap,cardViewOneri,cardViewYardım,cardViewAyarlar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
