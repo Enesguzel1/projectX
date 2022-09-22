@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class HomePageActivity extends AppCompatActivity {
     CardView cardViewBecayis,cardViewAlSat,cardViewSoruCevap,cardViewOneri,cardViewYardım,cardViewAyarlar;
@@ -51,6 +52,7 @@ public class HomePageActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void goToAlSatActivity(){
+
         Intent intent=new Intent(HomePageActivity.this,AlSatActivity.class);
         startActivity(intent);
     }
