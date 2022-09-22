@@ -11,8 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:spanCount="2"
-        android:layout_centerHorizontal="true"
-        android:padding="5dp"/>
+        app:spanCount="2"/>
 
 </RelativeLayout>
