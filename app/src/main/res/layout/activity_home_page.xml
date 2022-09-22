@@ -9,6 +9,12 @@
     android:background="@drawable/home_page_activity_background"
     tools:context=".HomePageActivity">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
         <TextView
             android:id="@+id/welcomeText"
             android:layout_width="match_parent"
@@ -18,262 +24,30 @@
             android:textSize="20sp"
             android:textStyle="bold|italic" />
 
-        <RelativeLayout
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/welcomeText"
-            android:gravity="center">
-            <GridLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:columnCount="2"
-                android:rowCount="3">
+            android:layout_below="@id/welcomeText"
+            android:layout_marginTop="20dp"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:layout_margin="20dp">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardViewBecayis"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#DAD5D5"
-                    app:cardCornerRadius="20dp"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    android:layout_margin="15dp"
-                    app:cardElevation="8dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:padding="25dp"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/ic_becayis" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Becayiş"
-                            android:textColor="@color/black"
-                            android:textSize="25sp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardViewAlSat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#DAD5D5"
-                    app:cardCornerRadius="20dp"
-                    android:layout_row="0"
-                    android:layout_column="1"
-                    android:layout_margin="15dp"
-                    app:cardElevation="8dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:padding="25dp"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/ic_al_sat" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Al &amp; Sat"
-                            android:textColor="@color/black"
-                            android:textSize="25sp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardViewSoruCevap"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#DAD5D5"
-                    app:cardCornerRadius="20dp"
-                    android:layout_row="1"
-                    android:layout_margin="15dp"
-                    android:layout_column="0"
-                    app:cardElevation="8dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:padding="25dp"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/ic_question_answer" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Al &amp; Sat"
-                            android:textColor="@color/black"
-                            android:textSize="25sp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardViewOneri"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#DAD5D5"
-                    app:cardCornerRadius="20dp"
-                    android:layout_row="1"
-                    android:layout_margin="15dp"
-                    android:layout_column="1"
-                    app:cardElevation="8dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:padding="25dp"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/ic_suggestion" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Al &amp; Sat"
-                            android:textColor="@color/black"
-                            android:textSize="25sp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardViewYardım"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#DAD5D5"
-                    app:cardCornerRadius="20dp"
-                    android:layout_row="2"
-                    android:layout_column="0"
-                    android:layout_margin="15dp"
-                    app:cardElevation="8dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:padding="25dp"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/ic_help" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Al &amp; Sat"
-                            android:textColor="@color/black"
-                            android:textSize="25sp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardViewAyarlar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#DAD5D5"
-                    app:cardCornerRadius="20dp"
-                    android:layout_row="2"
-                    android:layout_column="1"
-                    android:layout_margin="15dp"
-                    app:cardElevation="8dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:gravity="center"
-                        android:padding="25dp"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/ic_settings" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Al &amp; Sat"
-                            android:textColor="@color/black"
-                            android:textSize="25sp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
-
-
-                </androidx.cardview.widget.CardView>
-            </GridLayout>
-        </RelativeLayout>
-
-
-    <!--
-     <androidx.cardview.widget.CardView
+            <soup.neumorphism.NeumorphCardView
                 android:id="@+id/cardViewBecayis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_row="0"
+                android:layout_rowWeight="1"
                 android:layout_column="0"
-                app:cardUseCompatPadding="true"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:backgroundTint="#A69F9F"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="8dp"
-                android:backgroundTint="#DAD5D5"
+                app:cardUseCompatPadding="true"
+                app:neumorph_shadowColorDark="#837C7C"
+                app:neumorph_shadowColorLight="@color/white"
                 >
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -302,22 +76,24 @@
                 </LinearLayout>
 
 
-            </androidx.cardview.widget.CardView>
+            </soup.neumorphism.NeumorphCardView>
 
-            <androidx.cardview.widget.CardView
+            <soup.neumorphism.NeumorphCardView
                 android:id="@+id/cardViewAlSat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_row="0"
+                android:layout_rowWeight="1"
                 android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:backgroundTint="#A69F9F"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true"
-                android:backgroundTint="#A69F9F"
-                >
+                app:neumorph_shadowColorDark="#837C7C"
+                app:neumorph_shadowColorLight="@color/white">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -328,38 +104,39 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_al_sat"
-                        />
+                        android:src="@drawable/ic_al_sat" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="    Al &amp; Sat     "
                         android:textAlignment="center"
+                        android:textColor="@color/black"
                         android:textSize="25sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"/>
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
 
 
-            </androidx.cardview.widget.CardView>
+            </soup.neumorphism.NeumorphCardView>
 
-            <androidx.cardview.widget.CardView
+            <soup.neumorphism.NeumorphCardView
                 android:id="@+id/cardViewSoruCevap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
                 android:layout_row="1"
+                android:layout_rowWeight="1"
                 android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:backgroundTint="#DAD5D5"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="8dp"
-                app:cardUseCompatPadding="true"
-                android:backgroundTint="#DAD5D5"
-                >
+                app:neumorph_shadowColorDark="#837C7C"
+                app:neumorph_shadowColorLight="@color/white"
+                app:cardUseCompatPadding="true">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -370,24 +147,23 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_question_answer"
-                        />
+                        android:src="@drawable/ic_question_answer" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Soru&amp;Cevap"
+                        android:textColor="@color/black"
                         android:textSize="25sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"/>
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
 
 
-            </androidx.cardview.widget.CardView>
+            </soup.neumorphism.NeumorphCardView>
 
-            <androidx.cardview.widget.CardView
+            <soup.neumorphism.NeumorphCardView
                 android:id="@+id/cardViewOneri"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -396,10 +172,12 @@
                 android:layout_column="1"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
+                android:backgroundTint="#A69F9F"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true"
-                android:backgroundTint="#A69F9F">
+                app:neumorph_shadowColorDark="#837C7C"
+                app:neumorph_shadowColorLight="@color/white">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -411,8 +189,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/ic_suggestion"
-                        />
+                        android:src="@drawable/ic_suggestion" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -426,9 +203,11 @@
                 </LinearLayout>
 
 
-            </androidx.cardview.widget.CardView>
+            </soup.neumorphism.NeumorphCardView>
 
-            <androidx.cardview.widget.CardView
+            <soup.neumorphism.NeumorphCardView
+                app:neumorph_shadowColorDark="#837C7C"
+                app:neumorph_shadowColorLight="@color/white"
                 android:id="@+id/cardViewYardım"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -470,9 +249,11 @@
                 </LinearLayout>
 
 
-            </androidx.cardview.widget.CardView>
+            </soup.neumorphism.NeumorphCardView>
 
-            <androidx.cardview.widget.CardView
+            <soup.neumorphism.NeumorphCardView
+                app:neumorph_shadowColorDark="#837C7C"
+                app:neumorph_shadowColorLight="@color/white"
                 android:id="@+id/cardViewAyarlar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -511,11 +292,18 @@
                 </LinearLayout>
 
 
-            </androidx.cardview.widget.CardView>
+            </soup.neumorphism.NeumorphCardView>
 
 
 
-    -->
+        </GridLayout>
+
+    </RelativeLayout>
+
+
+
+
+
 
 
 </RelativeLayout>
